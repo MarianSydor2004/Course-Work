@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0"
+            prefWidth="1060.0" style="-fx-background-color: e6e5cc;" xmlns="http://javafx.com/javafx/11"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.gift.terminal.controller.AdminController">
+    <left>
+        <AnchorPane prefHeight="437.0" prefWidth="265.0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="242.0" fitWidth="474.0" layoutX="14.0" layoutY="314.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@img/gift_card.jpg"/>
+                    </image>
+                </ImageView>
+                <Label alignment="CENTER" layoutX="37.0" layoutY="42.0" prefHeight="208.0" prefWidth="299.0" text="GIFT"
+                       textAlignment="CENTER" textFill="#810606">
+                    <font>
+                        <Font name="Times New Roman Bold Italic" size="48.0"/>
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </left>
+    <right>
+        <AnchorPane prefHeight="720.0" prefWidth="714.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button layoutX="248.0" layoutY="244.0" mnemonicParsing="false" onAction="#createRetailer"
+                        prefHeight="26.0" prefWidth="160.0" text="Create retailer"/>
+                <Button layoutX="248.0" layoutY="296.0" mnemonicParsing="false" onAction="#editRetailer"
+                        prefHeight="26.0" prefWidth="160.0" text="Edit retailer"/>
+                <Button layoutX="248.0" layoutY="350.0" mnemonicParsing="false" onAction="#createShop" prefHeight="26.0"
+                        prefWidth="160.0" text="Create shop"/>
+                <Label layoutX="266.0" layoutY="157.0" text="Admin Panel" textFill="#810606">
+                    <font>
+                        <Font name="Times New Roman" size="24.0"/>
+                    </font>
+                </Label>
+                <Button layoutX="248.0" layoutY="427.0" mnemonicParsing="false" onAction="#logOut" prefHeight="26.0"
+                        prefWidth="160.0" text="Log out"/>
+            </children>
+        </AnchorPane>
+    </right>
+</BorderPane>
